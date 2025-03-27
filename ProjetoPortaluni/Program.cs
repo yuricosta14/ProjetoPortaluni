@@ -1,3 +1,5 @@
+using ProjetoPortaluni.View;
+
 namespace ProjetoPortaluni
 {
     internal static class Program
@@ -11,7 +13,7 @@ namespace ProjetoPortaluni
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new frmLogin());
+            Application.Run(new frmProfessor());
         }
     }
 }
