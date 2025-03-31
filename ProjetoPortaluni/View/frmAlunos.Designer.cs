@@ -29,24 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAlunos));
-            btnTurmaAluno = new Button();
             lblSupContato = new Label();
             lblAluno = new Label();
             btnFreqAluno = new Button();
-            btnGernciaCadastro = new Button();
             btnBoletim = new Button();
             splitter1 = new Splitter();
             SuspendLayout();
-            // 
-            // btnTurmaAluno
-            // 
-            btnTurmaAluno.BackColor = Color.White;
-            btnTurmaAluno.Location = new Point(15, 264);
-            btnTurmaAluno.Name = "btnTurmaAluno";
-            btnTurmaAluno.Size = new Size(199, 25);
-            btnTurmaAluno.TabIndex = 15;
-            btnTurmaAluno.Text = "Ver turma";
-            btnTurmaAluno.UseVisualStyleBackColor = false;
             // 
             // lblSupContato
             // 
@@ -57,6 +45,7 @@
             lblSupContato.Size = new Size(103, 15);
             lblSupContato.TabIndex = 14;
             lblSupContato.Text = "Suporte e Contato";
+            lblSupContato.Click += lblSupContato_Click;
             // 
             // lblAluno
             // 
@@ -71,32 +60,23 @@
             // btnFreqAluno
             // 
             btnFreqAluno.BackColor = Color.White;
-            btnFreqAluno.Location = new Point(15, 188);
+            btnFreqAluno.Location = new Point(15, 117);
             btnFreqAluno.Name = "btnFreqAluno";
             btnFreqAluno.Size = new Size(199, 25);
             btnFreqAluno.TabIndex = 11;
             btnFreqAluno.Text = "Frequência";
             btnFreqAluno.UseVisualStyleBackColor = false;
-            // 
-            // btnGernciaCadastro
-            // 
-            btnGernciaCadastro.BackColor = Color.Transparent;
-            btnGernciaCadastro.ForeColor = SystemColors.ControlText;
-            btnGernciaCadastro.Location = new Point(12, 53);
-            btnGernciaCadastro.Name = "btnGernciaCadastro";
-            btnGernciaCadastro.Size = new Size(202, 25);
-            btnGernciaCadastro.TabIndex = 10;
-            btnGernciaCadastro.Text = "Gerenciar cadastro";
-            btnGernciaCadastro.UseVisualStyleBackColor = false;
+            btnFreqAluno.Click += btnFreqAluno_Click;
             // 
             // btnBoletim
             // 
-            btnBoletim.Location = new Point(15, 117);
+            btnBoletim.Location = new Point(15, 53);
             btnBoletim.Name = "btnBoletim";
             btnBoletim.Size = new Size(199, 25);
             btnBoletim.TabIndex = 9;
             btnBoletim.Text = "Boletim";
             btnBoletim.UseVisualStyleBackColor = true;
+            btnBoletim.Click += btnBoletim_Click;
             // 
             // splitter1
             // 
@@ -113,27 +93,22 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 128, 0);
             ClientSize = new Size(798, 575);
-            Controls.Add(btnTurmaAluno);
             Controls.Add(lblSupContato);
             Controls.Add(lblAluno);
             Controls.Add(btnFreqAluno);
-            Controls.Add(btnGernciaCadastro);
             Controls.Add(btnBoletim);
             Controls.Add(splitter1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmAlunos";
-            Text = "Form1";
+            Text = "'";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Button btnTurmaAluno;
         private Label lblSupContato;
         private Label lblAluno;
         private Button btnFreqAluno;
-        private Button btnGernciaCadastro;
         private Button btnBoletim;
         private Splitter splitter1;
     }

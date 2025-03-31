@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProfessor));
-            btnTurmas = new Button();
             btnNotas = new Button();
             btnGernciaAluno = new Button();
             btnFreq = new Button();
@@ -40,16 +39,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // btnTurmas
-            // 
-            btnTurmas.BackColor = Color.White;
-            btnTurmas.Location = new Point(12, 277);
-            btnTurmas.Name = "btnTurmas";
-            btnTurmas.Size = new Size(199, 25);
-            btnTurmas.TabIndex = 7;
-            btnTurmas.Text = "Ver turmas";
-            btnTurmas.UseVisualStyleBackColor = false;
-            // 
             // btnNotas
             // 
             btnNotas.Location = new Point(12, 122);
@@ -58,6 +47,7 @@
             btnNotas.TabIndex = 1;
             btnNotas.Text = "Notas";
             btnNotas.UseVisualStyleBackColor = true;
+            btnNotas.Click += btnNotas_Click;
             // 
             // btnGernciaAluno
             // 
@@ -69,6 +59,7 @@
             btnGernciaAluno.TabIndex = 2;
             btnGernciaAluno.Text = "Gerenciador de alunos";
             btnGernciaAluno.UseVisualStyleBackColor = false;
+            btnGernciaAluno.Click += btnGernciaAluno_Click;
             // 
             // btnFreq
             // 
@@ -79,6 +70,7 @@
             btnFreq.TabIndex = 3;
             btnFreq.Text = "Frequência";
             btnFreq.UseVisualStyleBackColor = false;
+            btnFreq.Click += btnFreq_Click;
             // 
             // lblProfessor
             // 
@@ -94,11 +86,13 @@
             // 
             lblSupContato.AutoSize = true;
             lblSupContato.BackColor = Color.Gainsboro;
+            lblSupContato.Cursor = Cursors.Help;
             lblSupContato.Location = new Point(54, 534);
             lblSupContato.Name = "lblSupContato";
             lblSupContato.Size = new Size(103, 15);
             lblSupContato.TabIndex = 6;
             lblSupContato.Text = "Suporte e Contato";
+            lblSupContato.Click += lblSupContato_Click;
             // 
             // splitter1
             // 
@@ -124,7 +118,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 128, 0);
             ClientSize = new Size(801, 558);
-            Controls.Add(btnTurmas);
             Controls.Add(lblSupContato);
             Controls.Add(lblProfessor);
             Controls.Add(btnFreq);
@@ -141,8 +134,6 @@
         }
 
         #endregion
-
-        private Button btnTurmas;
         private Button btnNotas;
         private Button btnGernciaAluno;
         private Button btnFreq;

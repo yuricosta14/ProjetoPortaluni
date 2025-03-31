@@ -1,6 +1,7 @@
 using ProjetoPortaluni.Model.Validators;
 using ProjetoPortaluni.View;
 using System;
+using System.Runtime.Intrinsics.X86;
 using System.Windows.Forms;
 
 namespace ProjetoPortaluni
@@ -16,6 +17,7 @@ namespace ProjetoPortaluni
         {
             var form = new frmRecuperarSenha();
             form.ShowDialog();
+ 
         }
 
         private void btnEntrar_Click(object sender, EventArgs e)
@@ -26,6 +28,20 @@ namespace ProjetoPortaluni
                 errorProvider1.SetError(txtEmail, "Seu e-mail está incorreto, tentar novamente");
                 txtEmail.Focus();
                 return;
+            }
+            if (rdbAluno.Checked)
+            {
+                frmAlunos frmAlunos = new frmAlunos();
+                frmAlunos.Show();
+            }
+            else if (rdbProfessor.Checked)
+            {
+                frmProfessor frmProfessor = new frmProfessor();
+                frmProfessor.Show();
+            }
+            else
+            {
+                MessageBox.Show("Selecione uma opção!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
         }

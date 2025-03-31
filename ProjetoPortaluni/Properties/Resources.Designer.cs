@@ -69,5 +69,25 @@ namespace ProjetoPortaluni.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Imagem_do_WhatsApp_de_2025_03_30_à_s__12_28_07_9c0dc13c {
+            get {
+                object obj = ResourceManager.GetObject("Imagem do WhatsApp de 2025-03-30 à(s) 12.28.07_9c0dc13c", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Imagem_do_WhatsApp_de_2025_03_30_à_s__12_281 {
+            get {
+                object obj = ResourceManager.GetObject("Imagem do WhatsApp de 2025-03-30 à(s) 12.281", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
